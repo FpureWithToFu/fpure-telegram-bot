@@ -9,6 +9,7 @@ object Dependencies {
     val circe = "0.13.0"
     val derevo = "0.11.4"
     val tofu = "0.7.8"
+    val typesafe = "1.4.0"
     val trace4cats = "0.3.0"
     val bot4s = "???"
     val http4s = "0.21.7"
@@ -31,9 +32,12 @@ object Dependencies {
 
   val tofuCore = "ru.tinkoff" %% "tofu-core" % Versions.tofu
   val tofuConcurrent = "ru.tinkoff" %% "tofu-concurrent" % Versions.tofu
+  val tofuConfig = "ru.tinkoff" %% "tofu-config" % Versions.tofu
   val tofuDerivation = "ru.tinkoff" %% "tofu-derivation" % Versions.tofu
   val tofuOpticsCore = "ru.tinkoff" %% "tofu-optics-core" % Versions.tofu
   val tofuOpticsMacro = "ru.tinkoff" %% "tofu-optics-macro" % Versions.tofu
+
+  val typesafeConfig = "com.typesafe" % "config" % Versions.typesafe
 
   val trace4catsCore = "io.janstenpickle" %% "trace4cats-core" % Versions.trace4cats
   val trace4catsInject = "io.janstenpickle" %% "trace4cats-inject" % Versions.trace4cats
