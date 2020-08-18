@@ -2,6 +2,7 @@ package com.github.fpure
 
 import cats.Monad
 import cats.effect.{ExitCode, IO, IOApp}
+import cats.syntax.show._
 import com.github.fpure.config.Config
 import tofu.common.Console
 import tofu.syntax.console._
@@ -12,7 +13,7 @@ object Main extends IOApp {
     def program[F[_]: Monad: Console]: F[ExitCode] = for {
       config <- Config.load[F]
       _ <- config.fold(
-                    errs => errs.foreach(err => puts"$err"),
+                    errs => errs.foreach(err => println(err.show)),
                     conf => println(conf)
                   ).pure[F]
       _ <- puts"Hello World!"
