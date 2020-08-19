@@ -8,7 +8,7 @@ object Dependencies {
     val catsTagless = "0.11"
     val circe = "0.13.0"
     val derevo = "0.11.4"
-    val tofu = "0.7.8"
+    val tofu = "0.7.9"
     val typesafe = "1.4.0"
     val trace4cats = "0.3.0"
     val bot4s = "???"
