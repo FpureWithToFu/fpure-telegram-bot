@@ -34,6 +34,7 @@ object Dependencies {
   val tofuConcurrent = "ru.tinkoff" %% "tofu-concurrent" % Versions.tofu
   val tofuConfig = "ru.tinkoff" %% "tofu-config" % Versions.tofu
   val tofuDerivation = "ru.tinkoff" %% "tofu-derivation" % Versions.tofu
+  val tofuLogging = "ru.tinkoff" %% "tofu-logging" % Versions.tofu
   val tofuOpticsCore = "ru.tinkoff" %% "tofu-optics-core" % Versions.tofu
   val tofuOpticsMacro = "ru.tinkoff" %% "tofu-optics-macro" % Versions.tofu
 

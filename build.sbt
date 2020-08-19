@@ -18,6 +18,7 @@ libraryDependencies ++= Seq(
   tofuConcurrent,
   tofuConfig,
   tofuDerivation,
+  tofuLogging,
   tofuOpticsCore,
   tofuOpticsMacro,
   typesafeConfig,
