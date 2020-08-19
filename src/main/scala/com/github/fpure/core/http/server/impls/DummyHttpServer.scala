@@ -17,7 +17,7 @@ import tofu.syntax.monadic._
 import scala.concurrent.duration._
 
 class DummyHttpServer[F[_]: Monad: Logging: Console: BracketThrow: Timer: GenRandom: *[_] HasContext HttpServerConfig] extends HttpServer[F] {
-  def serve: F[Unit] = config >> (Timer[F].sleep(10.second) >> loop).foreverM
+  def serve: F[Unit] = config >> (Timer[F].sleep(10.second) >> loop).foreverM[Unit]
 
   def config: F[Unit] = for {
     conf <- context[F]
